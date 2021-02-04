@@ -11,14 +11,12 @@
 
 <script type="text/ecmascript-6">
   import MHeader from 'components/m-header/m-header'
-  import Player from 'components/player/player'
-  import Tab from 'components/tab/tab'
+  import Tab from 'components/tab/tab.vue'
 
   export default {
     components: {
       MHeader,
-      Tab,
-      Player
+      Tab
     }
   }
 </script>
