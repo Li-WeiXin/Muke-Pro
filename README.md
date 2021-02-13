@@ -23,5 +23,5 @@ npm run build
 ```
 npm run lint
 ```
-
+>- 1、分析需求，拆分路由，分析哪些是可以复用的
 
