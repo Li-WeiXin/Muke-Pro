@@ -4,8 +4,13 @@ import VueAxios from 'vue-axios'
 import router from './router'
 import App from './App.vue'
 
+const mock = true
+if (mock) {
+  require('./mock/api') // mock开关
+}
+
 // 根据前端的跨域方式做调整 /a/b : /api/a/b => /a/b
-// axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5dc7afee2b69d9223b633cbb/mimall';
+// axios.defaults.baseURL = 'https://www.easy-mock.com/mock/5dc7afee2b69d9223b633cbb/mimall'
 axios.defaults.baseURL = '/api'
 // 超时时间
 axios.defaults.timeout = 8000
