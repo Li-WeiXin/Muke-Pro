@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss">
   @import './../assets/scss/base.scss';
+  @import './../assets/scss/mixin.scss';
   .header {
     .nav-topbar {
       height: 39px;
@@ -61,9 +62,7 @@ export default {
       color:#B0B0B0;
 
     .container {
-      display:flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex();
       a {
         display: inline-block;
         color: #B0B0B0;
@@ -75,11 +74,7 @@ export default {
         text-align: center;
         color:#fff;
       .icon-cart {
-        display:inline-block;
-        width:16px;
-        height:12px;
-        background: url('/imgs/icon-cart.png') no-repeat center;
-        background-size: contain;
+        @include bgImg(16px,12px,'/imgs/icon-cart.png');
         margin-right:4px;
       }
       }
@@ -88,9 +83,7 @@ export default {
     .nav-header {
       .container {
         height: 112px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex();
         .header-logo {
           display:inline-block;
           width:55px;
@@ -102,20 +95,12 @@ export default {
             height: 55px;
             &:before {
               content: ' ';
-              display: inline-block;
-              width:55px;
-              height: 55px;
-              background: url('/imgs/mi-logo.png') no-repeat center;
-              background-size: 55px;
+              @include bgImg(55px,55px,'/imgs/mi-logo.png',55px);
               transition: margin .2s
             }
             &:after {
               content: ' ';
-              display: inline-block;
-              width:55px;
-              height: 55px;
-              background: url('/imgs/mi-home.png') no-repeat center;
-              background-size: 55px;
+              @include bgImg(55px,55px,'/imgs/mi-home.png',55px);
             }
             &:hover:before {
               margin-left: -55px;
@@ -125,6 +110,7 @@ export default {
         }
         .header-menu {
           display: inline-block;
+          width:643px;
           padding-left: 209px;
           .item-menu {
             display: inline-block;
@@ -156,11 +142,7 @@ export default {
               padding-left: 14px;
             }
             a {
-              display:inline-block;
-              width: 18px;
-              height: 18px;
-              background: url('/imgs/icon-search.png') no-repeat center;
-              background-size: contain;
+              @include bgImg(18px,18px,'/imgs/icon-search.png',);
               margin-left: 17px;
             }
           }
