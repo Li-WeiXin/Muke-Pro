@@ -1,0 +1,39 @@
+AxiosTS
+
+# MusicApp
+MusicApp/node_modules/
+MusicApp/dist/
+MusicApp/npm-debug.log*
+MusicApp/yarn-debug.log*
+MusicApp/yarn-error.log*
+MusicApp/.idea/
+MusicApp/lianxi.js
+
+# Vue-Todolist
+Vue-Todolist/TODO/node_modules
+Vue-Todolist/TODO/dist
+
+
+# XiaomiShop
+xiaomiShop/node_modules
+xiaomiShop/dist
+
+
+# local env files
+xiaomiShop/.env.local
+xiaomiShop/.env.*.local
+
+# Log files
+xiaomiShop/npm-debug.log*
+xiaomiShop/yarn-debug.log*
+xiaomiShop/yarn-error.log*
+xiaomiShop/pnpm-debug.log*
+
+# Editor directories and files
+xiaomiShop/.idea
+xiaomiShop/.vscode
+xiaomiShop/*.suo
+xiaomiShop/*.ntvs*
+xiaomiShop/*.njsproj
+xiaomiShop/*.sln
+xiaomiShop/*.sw?
